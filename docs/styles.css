@@ -1,3 +1,6 @@
+/*
+    BASIC
+*/
 body {
     background-color:black;
     color: aliceblue;
@@ -8,48 +11,26 @@ header {
     padding: 1em;
     text-align: center;
 }
+p {
+    text-align: left;
+    font-size: x-large;
+    margin: 1in;
+}
 h1 {
     font-family: 'Courier New', Courier, monospace;
 }
-
 h2 {
     text-align: center;
     font-size: xx-large;
 }
-
 h3 {
     text-align: center;
     font-size: x-large;
     padding-bottom: 1in;
 }
-
 a {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:xx-large;
-}
-
-.insta_link {
-    color: rgb(206, 61, 255);
-    text-align: center;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-}
-
-.LI_link {
-    color: rgb(103, 197, 255);
-    text-align: center;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-}
-
-.mail_link {
-    color: rgb(183, 255, 199);
-    text-align: center;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
 }
 
 nav ul {
@@ -59,78 +40,52 @@ nav ul {
     margin: 0;
 }
 
+/*
+    SECTION BUTTONS
+*/
 .home-link {
     color: rgb(86, 145, 255);
 }
-
 .about_me-link {
     color: rgb(255, 88, 88);
 }
-
 .projects-link {
     color: rgb(171, 119, 255);
 }
-
 .contact-link {
     color: rgb(127, 255, 132);
 }
-
 .home-link:hover {
     color: rgb(118, 196, 255);
     background-color: #ffffff; /* Tomato color */
     border-radius: 5px; /* Rounded corners */
 }
-
 .about_me-link:hover {
     color: #ffffff;
     background-color: #4682b4; /* Steel blue */
     border-radius: 5px;
 }
-
 .projects-link:hover {
     color: #fff;
     background-color: #32cd32; /* Lime green */
     border-radius: 5px;
 }
-
 .contact-link:hover {
     color: #fff;
     background-color: #ffa500; /* Orange */
     border-radius: 5px;
 }
-
 .nav-link:active {
     transform: scale(0.7); /* Slightly shrink the link on click */
 }
 
-p {
-    text-align: left;
-    font-size: x-large;
-    margin: 1in;
-}
-
-.contact {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 20px;
-    font-size: xx-large;
-}
-
-.copyright {
-    text-align: left;
-}
-
-.pic_of_me {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/*
+EASTER EGG :]
+*/
 .gecko_pic {
     display: block;
     margin-left: 15in;
 }
-
 .geck_msg {
     text-shadow: 2px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -139,22 +94,22 @@ p {
     margin-top: 20px;
 }
 
+/*
+PROJECTS SECTION 
+*/
 .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .project {
     margin-bottom: 20px;
     text-align: center;
     cursor:pointer;
 }
-
 .project-title {
     margin-top: 10px;
 }
-
 .description {
     display: none;
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add smooth transition effect */
@@ -164,7 +119,6 @@ p {
     transform: scale(0.8); /* Initially scale down the description */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White box-shadow for emphasis */
 }
-
 .project:hover .description {
     display: block;
     opacity: 1; /* Show the description with smooth transition */
@@ -176,7 +130,6 @@ p {
     animation: rainbowText 6s infinite; /* Rainbow text color animation */
     animation: glowingBorder 4s infinite alternate; /* Glowing border animation */
 }
-
 @keyframes rainbowText {
     0% { color: #ff0000; }
     14.2857% { color: #ff8000; }
@@ -186,8 +139,50 @@ p {
     71.4285% { color: #0080ff; }
     100% { color: #ff0000; }
 }
-
 @keyframes glowingBorder {
     0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
     100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+}
+
+/*
+CONTACT SECTION BUTTONS
+*/
+.insta_link {
+    color: rgb(206, 61, 255);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.LI_link {
+    color: rgb(103, 197, 255);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.mail_link {
+    color: rgb(183, 255, 199);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+/*
+    OTHER
+*/
+.contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px;
+    font-size: xx-large;
+}
+.copyright {
+    text-align: left;
+}
+.pic_of_me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
