@@ -1,0 +1,3 @@
+-flashier description for proj's ✅
+-icons for contact page left of links ✅
+-refactor src code

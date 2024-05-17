@@ -44,6 +44,14 @@ a {
     font-size: xx-large;
 }
 
+.mail_link {
+    color: rgb(183, 255, 199);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -149,8 +157,37 @@ p {
 
 .description {
     display: none;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add smooth transition effect */
+    opacity: 0; /* Initially hide the description */
+    padding: 20px; /* Increase padding for better visibility */
+    border-radius: 10px; /* Rounded corners */
+    transform: scale(0.8); /* Initially scale down the description */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White box-shadow for emphasis */
 }
 
 .project:hover .description {
     display: block;
+    opacity: 1; /* Show the description with smooth transition */
+    transform: scale(1); /* Scale the description to its original size */
+    background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #ff0000); /* Apply rainbow background */
+    -webkit-background-clip: text; /* Clip the text to the background gradient */
+    background-clip: text;
+    color: transparent; /* Make the text transparent */
+    animation: rainbowText 6s infinite; /* Rainbow text color animation */
+    animation: glowingBorder 4s infinite alternate; /* Glowing border animation */
+}
+
+@keyframes rainbowText {
+    0% { color: #ff0000; }
+    14.2857% { color: #ff8000; }
+    28.5714% { color: #ffff00; }
+    42.8571% { color: #80ff00; }
+    57.1428% { color: #00ff80; }
+    71.4285% { color: #0080ff; }
+    100% { color: #ff0000; }
+}
+
+@keyframes glowingBorder {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+    100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
 }
