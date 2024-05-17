@@ -1,0 +1,156 @@
+body {
+    background-color:black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 1em;
+    text-align: center;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+h3 {
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 1in;
+}
+
+a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:xx-large;
+}
+
+.insta_link {
+    color: rgb(206, 61, 255);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.LI_link {
+    color: rgb(103, 197, 255);
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1in;
+    margin: 0;
+}
+
+.home-link {
+    color: rgb(86, 145, 255);
+}
+
+.about_me-link {
+    color: rgb(255, 88, 88);
+}
+
+.projects-link {
+    color: rgb(171, 119, 255);
+}
+
+.contact-link {
+    color: rgb(127, 255, 132);
+}
+
+.home-link:hover {
+    color: rgb(118, 196, 255);
+    background-color: #ffffff; /* Tomato color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.about_me-link:hover {
+    color: #ffffff;
+    background-color: #4682b4; /* Steel blue */
+    border-radius: 5px;
+}
+
+.projects-link:hover {
+    color: #fff;
+    background-color: #32cd32; /* Lime green */
+    border-radius: 5px;
+}
+
+.contact-link:hover {
+    color: #fff;
+    background-color: #ffa500; /* Orange */
+    border-radius: 5px;
+}
+
+.nav-link:active {
+    transform: scale(0.7); /* Slightly shrink the link on click */
+}
+
+p {
+    text-align: left;
+    font-size: x-large;
+    margin: 1in;
+}
+
+.contact {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px;
+    font-size: xx-large;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.pic_of_me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gecko_pic {
+    display: block;
+    margin-left: 15in;
+}
+
+.geck_msg {
+    text-shadow: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.project-title {
+    margin-top: 10px;
+}
+
+.description {
+    display: none;
+}
+
+.project:hover .description {
+    display: block;
+}
